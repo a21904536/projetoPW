@@ -1,0 +1,91 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+<form  method="POST" action="malito:a22004316@alunos.ulht.pt" autocomplete="off">
+    <fieldset>
+        <legend><b>Opinião sobre o Website</b></legend>
+        <p>
+            <label for="quantidade">De 0 a 10, em quanto avalia o website na sua globalidade</label>
+            <br>
+            <input type="range" id="quantidade" name="vol" min="0" max="10">
+        </p>
+        <legend><b>Avaliação do website</b></legend>
+        <p>Avalie o website em alguns aspetos de 1 a 5, onde 1 significa "Não concordo" e 5 significa "Concordo totalmente"</p>
+        <p>
+            O website está bem estrurado.
+            <input type="radio" id="estrura1" name="estrura" value="1">
+            <label for="estrura1">1</label>
+            <input type="radio" id="estrura2" name="estrura" value="2">
+            <label for="estrura2">2</label>
+            <input type="radio" id="estrura3" name="estrura" value="3">
+            <label for="estrura3">3</label>
+            <input type="radio" id="estrura4" name="estrura" value="4">
+            <label for="estrura4">4</label>
+            <input type="radio" id="estrura5" name="estrura" value="5">
+            <label for="estrura5">5</label>
+        </p>
+        <p>
+            A informação contida no website é clara e de facil perceção.
+            <input type="radio" id="informacao1" name="informacao" value="1">
+            <label for="informacao1">1</label>
+            <input type="radio" id="informacao2" name="informacao" value="2">
+            <label for="informacao2">2</label>
+            <input type="radio" id="informacao3" name="informacao" value="3">
+            <label for="informacao3">3</label>
+            <input type="radio" id="informacao4" name="informacao" value="4">
+            <label for="informacao4">4</label>
+            <input type="radio" id="informacao5" name="informacao" value="5">
+            <label for="informacao5">5</label>
+        </p>
+        <p>
+            O website abrange vários tipos de informações relativos á Formula 1.
+            <input type="radio" id="tipoiInformacao1" name="tipoiInformacao" value="1">
+            <label for="tipoiInformacao1">1</label>
+            <input type="radio" id="tipoiInformacao2" name="tipoiInformacao" value="2">
+            <label for="tipoiInformacao2">2</label>
+            <input type="radio" id="tipoiInformacao3" name="tipoiInformacao" value="3">
+            <label for="tipoiInformacao3">3</label>
+            <input type="radio" id="tipoiInformacao4" name="tipoiInformacao" value="4">
+            <label for="tipoiInformacao4">4</label>
+            <input type="radio" id="tipoiInformacao5" name="tipoiInformacao" value="5">
+            <label for="tipoiInformacao5">5</label>
+        </p>
+        <p>
+            A informação colocada no website é importante.
+            <input type="radio" id="2tipoiInformacao1" name="2tipoiInformacao" value="1">
+                        <label for="2tipoiInformacao1">1</label>
+                        <input type="radio" id="2tipoiInformacao2" name="2tipoiInformacao" value="2">
+                        <label for="2tipoiInformacao2">2</label>
+                        <input type="radio" id="2tipoiInformacao3" name="2tipoiInformacao" value="3">
+                        <label for="2tipoiInformacao3">3</label>
+                        <input type="radio" id="2tipoiInformacao4" name="2tipoiInformacao" value="4">
+                        <label for="2tipoiInformacao4">4</label>
+                        <input type="radio" id="2tipoiInformacao5" name="2tipoiInformacao" value="5">
+                        <label for="2tipoiInformacao5">5</label>
+                    </p>
+                    <p>
+                        A informação colocada no website é rigorosa e está bem escrita.
+                        <input type="radio" id="3tipoiInformacao1" name="3tipoiInformacao" value="1">
+                        <label for="3tipoiInformacao1">1</label>
+                        <input type="radio" id="3tipoiInformacao2" name="3tipoiInformacao" value="2">
+                        <label for="3tipoiInformacao2">2</label>
+                        <input type="radio" id="3tipoiInformacao3" name="3tipoiInformacao" value="3">
+                        <label for="3tipoiInformacao3">3</label>
+                        <input type="radio" id="3tipoiInformacao4" name="3tipoiInformacao" value="4">
+                        <label for="3tipoiInformacao4">4</label>
+                        <input type="radio" id="3tipoiInformacao5" name="3tipoiInformacao" value="5">
+                        <label for="3tipoiInformacao5">5</label>
+                    </p>
+                    <p>
+                        <textarea name="mensagem" rows="5" cols="70">Indique sugestões para melhorar o website!</textarea>
+                        <input type="hidden" id="idLAB" name="idLAB" value="3">
+                    </p>
+                </fieldset>
+                <input type="image" src="https://cdn.iconscout.com/icon/free/png-512/sent-47-1172264.png" alt="Submit" width="50" height="50">
+        </section>
+        <a href="#top">
+            <span style="font-size:50px;height:30px;position: fixed;bottom: 30px;right: 30px;" class="material-icons md-24 ">arrow_upward</span>
+        </a>
+     </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+    <h3>Para entrarmos em contacto, introduza os seus dados:</h3>
+     <form  method="POST" action="">
+         {% csrf_token %}
+         {{ form.as_p }}
+         <input type="submit" value="Submeter">
+     </form>
+
+{% endblock main%}

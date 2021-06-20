@@ -1,0 +1,10 @@
+{% extends 'website/base.html' %}
+{% block main %}
+    <h3>Para podermos melhorar, deixe a sua opinião: </h3>
+    <form method="POST" action="">
+        <p>Para os 3 primeiros pontos, escolha entre 1 (Muito Mau) e 5 (Muito Bom). Nos restantes, escolha o que o Website abordou. </p>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar Comentários">
+    </form>
+{% endblock main %}
