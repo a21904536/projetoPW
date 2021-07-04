@@ -313,10 +313,3 @@ html {
     height: 15px;
     border: 1px solid black;
 }
-
-.tabelasPequenasAbout {
-    display: flex;
-    align-items:baseline;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-}
