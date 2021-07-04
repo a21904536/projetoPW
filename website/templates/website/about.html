@@ -1,10 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'website/base.html' %}
+{% load static %}
+{% block main %}
+    <div style="display: flex; align-items: baseline; justify-content: space-evenly; flex-wrap: wrap;">
+        <table style="text-align: center;" cellpadding="10%" cellspacing="4" class="centerTable">
+            <caption>Layout PC</caption>
+            <tbody>
+            <tr>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+            </tr>
+            <tr>
+                <td>Menu</td>
+                <td>Menu</td>
+                <td>Menu</td>
+            </tr>
+            <tr>
+                <td>Main</td>
+                <td>Main</td>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Aside</td>
+                <td>Aside</td>
+                <td>Aside</td>
+            </tr>
+            <tr>
+                <td>Footer</td>
+                <td>Footer</td>
+                <td>Footer</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="10%" cellspacing="4"class="centerTable" >
+            <caption>Layout Telemovel</caption>
+            <tbody>
+            <tr>
+                <td>Header</td>
+            </tr>
+            <tr>
+                <td>Menu</td>
+            </tr>
+            <tr>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Aside</td>
+            </tr>
+            <tr>
+                <td>Footer</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="10%" cellspacing="4"class="centerTable" >
+            <caption>Tabela Inventário</caption>
+            <tbody>
+            <tr>
+                <td>Páginas</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Imagens</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Links Externos</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Vídeos</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Animações</td>
+                <td>2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Caracteristicas</th>
+            <th>Elementos</th>
+            <th>Exemplos</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Responsividade</td>
+            <td>Layout consoante o tamanho da janela do browser</td>
+            <td>Em todas as páginas</td>
+        </tr>
+        <tr>
+            <td>Layouts</td>
+            <td>CSS grid e CSS flexbox</td>
+            <td>Todas as páginas</td>
+        </tr>
+        <tr>
+            <td>Tipos de display</td>
+            <td>Flex, Grid, Block, None</td>
+            <td>O flex é usado em todas as páginas para ordenar os conteudos<br>
+                o grid é usado para fazer templates <br>
+                O block é usado para centrar as imagens<br>
+                O none é usado para fazer desaparecer as fotos sticky e fixed no telemovel.
+            </td>
+        </tr>
+        <tr>
+            <td>Seletores</td>
+            <td>Universal, tipo, classe, id, atributos, pseudo-classe, pseudo-elemento</td>
+            <td>Páginas de estilo CSS</td>
+        </tr>
+        <tr>
+            <td>Animações</td>
+            <td>Keyframes</td>
+            <td>Mudança de cor no topo da página e deslocação de um quadrado ao longo do topo da página que muda de cor</td>
+        </tr>
+        <tr>
+            <td>Etiquetas</td>
+            <td>Header, main, figure, figcaption, table, image,  section, aside, span, form, span, iframe, style, meta, link, title, diva, a, p, h, footer, svg</td>
+            <td>Todas as paginas</td>
+        </tr>
+        <tr>
+            <td>Propriedades CSS</td>
+            <td>Background color, color, min-width, max-width, align-items, top, right, left, bottom, margin-top, margin-left, margin-right, display, float, padding, margin, position, width, height, vertical-align, animation,</td>
+            <td>Utilizado nas páginas de estilo CSS</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Técnicas Usadas</th>
+            <th>Detalhes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>HTML é a base deste projeto.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>CSS é a estilização das páginas web.</td>
+        </tr>
+        <tr>
+            <td>Django</td>
+            <td>Django é a web framework do projeto.</td>
+        </tr>
+        <tr>
+            <td>Java Scrip</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Tecnologias Usadas</th>
+            <th>Detalhes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>HTML é a base deste projeto.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>CSS é a estilização das páginas web.</td>
+        </tr>
+        <tr>
+            <td>GitHub</td>
+            <td>Github foi o local de repositório do projeto, ajudando assim no trabalho de equipa.</td>
+        </tr>
+        <tr>
+            <td>Heroku</td>
+            <td>Heroku é a plataforma que ajuda na execução do website.</td>
+        </tr>
+        <tr>
+            <td>Django</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        <tr>
+            <td>Java Scrip</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <figure>
+        <img src="{%static 'website/images/unknow.png' %}" class="centerImg">
+        <figcaption>Mapa do Website</figcaption>
+    </figure>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yabc-ItdihE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="centerImg"></iframe>
+    </main>
+{% endblock main %}

@@ -53,40 +53,7 @@ th{
     }
 }
 
-@media (max-width: 600px) {
-    .fixed {
-        display: none;
-    }
-    .sticky {
-        display: none;
-    }
-    .relative {
-        display: none;
-    }
 
-    body {
-        background-color: white;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'header'
-        'menu'
-        'main'
-        'aside'
-        'footer';
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav > div {
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 footer {
     margin-bottom: -50px;
@@ -234,13 +201,13 @@ html {
 
 .fixed {
     position: fixed;
-    bottom: 10%;
+    bottom: 3%;
     right: 0;
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0%;
   height: 0px;
   display: inline-block;
@@ -371,4 +338,14 @@ html {
     vertical-align: middle;
     height: 15px;
     border: 1px solid black;
+}
+
+.divK {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: primeira;
+    animation-duration: 6s;
+    animation-delay: 1s;
 }
