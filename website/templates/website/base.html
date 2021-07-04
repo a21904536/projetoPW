@@ -21,16 +21,37 @@
             <img src="{% static 'website/images/simboloF1.png' %}" alt="simboloF1" style="width:auto;" class="centerImg">
             <details class="textCenter">Simbolo oficial da Formula 1</details>
         </figure>
-        <nav>
-            <a class="btn btn-info" href="{% url 'website:home' %}"><span class="material-icons md-24 iconMeio">home</span> Home</a>
-            <a class="btn btn-info" href="{% url 'website:epoca' %}"><span class="material-icons md-24 iconMeio">public</span> Época 2021</a>
-            <a class="btn btn-info" href="{% url 'website:equipas' %}">Equipas</a>
-            <a class="btn btn-info" href="{% url 'website:recordes' %}"><span class="material-icons md-24 iconMeio">emoji_events</span> Recordes</a>
-            <a class="btn btn-info" href="{% url 'website:quizz' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Quizz</a>
-            <a class="btn btn-info" href="{% url 'website:opiniao' %}"><span class="material-icons md-24 iconMeio">thumb_up_alt</span> Opinião</a>
-            <a class="btn btn-info" href="{% url 'website:contacto' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Contacto</a>
-            <a class="btn btn-info" href="{% url 'website:about' %}"><span class="material-icons md-24 iconMeio">info</span> About Website</a>
-        </nav>
+     <nav style="text-align: center;">
+            <ul>
+             <a class="btn btn-info" href="{% url 'website:home' %}"><span class="material-icons md-24 iconMeio">home</span> Home</a>
+                <li>
+                    <a class="btn btn-info" href="{% url 'website:epoca' %}"><span class="material-icons md-24 iconMeio">public</span> Época 2021</a>
+                    <ul>
+                        <li>
+                            <li><a class="btn btn-info" href="{% url 'website:equipas' %}">Equipas</a></li>
+                            <li><a role="button" href="{% url 'website:epoca' %}#Calendário">Calendário</a></li>
+                            <li><a role="button" href="{% url 'website:epoca' %}#ClassificaçãoConstrutores">Classificação Construtores</a></li>
+                            <li><a role="button" href="{% url 'website:epoca' %}#ClassificaçãoPilotos">Classificação de Pilotos</a></li>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="btn btn-info" href="{% url 'website:recordes' %}"><span class="material-icons md-24 iconMeio">emoji_events</span> Recordes</a>
+                    <ul>
+                        <li>
+                            <li><a role="button" href="{% url 'website:recordes' %}#TítulosPilotos">Títulos Pilotos</a></li>
+                            <li><a role="button" href="{% url 'website:recordes' %}#Vitórias">Vitórias</a></li>
+                            <li><a role="button" href="{% url 'website:recordes' %}#TítulosConstrutores">Títulos Construtores</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <a class="btn btn-info" href="{% url 'website:comentario' %}"><span class="material-icons md-24 iconMeio">emoji_events</span> Comentários</a>
+                <a class="btn btn-info" href="{% url 'website:contacto' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Contacto</a>
+                <a class="btn btn-info" href="{% url 'website:quizz' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Quizz</a>
+                <a class="btn btn-info" href="{% url 'website:about' %}"><span class="material-icons md-24 iconMeio">info</span> About Website</a>
+            </ul>
+         </nav>
  </header>
 
     <article class="container">
