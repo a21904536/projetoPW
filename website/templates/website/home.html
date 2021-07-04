@@ -1,7 +1,17 @@
 {% extends 'website/base.html' %}
 {% load static %}
-
+{% block style %}
+    .background{
+    animation-name: segunda;
+    animation-duration: 6s;
+    }
+@keyframes segunda {
+    from { background-color: black; }
+    to { background-color: #c5c3b6; }
+}
+{% endblock style %}
 {% block main %}
+    <style class="segunda"></style>
     <section>
         <p>Oficilamente a Fórmula 1 foi criada a 1950 pela FIA(Federação Internacional de Automobilismo). A prova inaugural do campeonato foi realizado em Inglaterra no circuito de Silverstone.
             A prova realizou-se a uma sábado, 13 de Maio de 1950, para não coincidir com um culto religioso.

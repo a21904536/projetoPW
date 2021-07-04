@@ -1,6 +1,26 @@
 {% extends 'website/base.html' %}
 {% load static %}
+{% block style %}
+    .div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: primeira;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    }
+    @keyframes primeira {
+    0%   {background-color:red; left:0%; top:0%;}
+    25%  {background-color:white; left:50%; top:0%;}
+    50%  {background-color:red; left:100%; top:0%;}
+    75%  {background-color:white; left:50%; top:0%;}
+    100% {background-color:red; left:0%; top:0%;}
+    }
+
+{% endblock style %}
 {% block main %}
+    <div class="div"></div>
     <div style="display: flex; align-items: baseline; justify-content: space-evenly; flex-wrap: wrap;">
         <table style="text-align: center;" cellpadding="10%" cellspacing="4" class="centerTable">
             <caption>Layout PC</caption>
@@ -57,11 +77,11 @@
             <tbody>
             <tr>
                 <td>Páginas</td>
-                <td>6</td>
+                <td>9</td>
             </tr>
             <tr>
                 <td>Imagens</td>
-                <td>90</td>
+                <td>97</td>
             </tr>
             <tr>
                 <td>Links Externos</td>
@@ -183,7 +203,7 @@
         </tr>
         <tr>
             <td>Django</td>
-            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+            <td>O django foi usado para guardar os dados obtidos nos formulários de quizz, comentários e contacto</td>
         </tr>
         <tr>
             <td>Java Scrip</td>
