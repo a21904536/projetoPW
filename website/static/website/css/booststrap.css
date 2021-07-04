@@ -173,7 +173,7 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success:hover {
   color: #ffffff;
-  background-color: #449d44;
+  background-color: blue;
   border-color: #398439;
 }
 .btn-success:active,
