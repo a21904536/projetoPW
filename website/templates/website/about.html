@@ -1,134 +1,202 @@
 {% extends 'website/base.html' %}
 {% load static %}
-
 {% block main %}
-<div class="tabelasPequenasAbout">
-<table class="centerTable" cellpadding="10%" cellspacing="4">
-                     <thead>
-                         <tr>
-                             <th>Data</th>
-                             <th>Localização</th>
-                             <th>Vencedor</th>
-                         </tr>
-                     </thead>
-                     <tbody>
-                         <tr>
-                             <td>28/03/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/BAHRAIN.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> <a href="https://www.youtube.com/watch?v=QuBlV0dixMo&t" target="_blank">GP do Bahrain – Sakhir</a></td>
-                             <td><a href="https://www.formula1.com/en/results.html/2021/races/1064/bahrain/race-result.html" target="_blank">Lewis Hamilton</a></td>
-                         </tr>
-                         <tr>
-                             <td>18/04/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/ITALIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> <a href="https://www.youtube.com/watch?v=ds0BC8RDJ5o" target="_blank">GP da Emilia-Romanha – Imola</a></td>
-                             <td><a href="https://www.formula1.com/en/results.html/2021/races/1065/italy/race-result.html" target="_blank">Max Verstappen</a></td>
-                         </tr>
-                         <tr>
-                             <td>02/05/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/PORTUGAL.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP de Portugal – Portimão</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>09/05/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/ESPANHA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Espanha – Barcelona</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>23/05/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/MONACO.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP de Mônaco – Monte Carlo</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>06/06/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/AZERBAJAO.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP do Azerbaijão – Baku</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>13/06/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/CANADA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP do Canadá – Montreal</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>27/06/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/FRANCA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da França – Paul Ricard</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>04/07/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/AUSTRIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Áustria – Red Bull Ring</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>18/07/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/UK.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Grã-Bretanha – Silverstone</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>01/08/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/HUNGRIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Hungria – Hungaroring</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>29/08/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/BELGICA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Bélgica – Spa-Francorchamps</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>05/09/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/HOLANDA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Holanda – Zandvoort</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>12/09/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/ITALIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Itália – Monza</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>26/09/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/RUSSIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Rússia – Sochi</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>03/10/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/SINGAPURA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP de Singapura – Marina Bay</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>10/10/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/JAPAO.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP do Japão – Suzuka</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>24/10/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/USA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP dos EUA – Austin</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>31/10/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/MEXICO.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP do México – Cidade do México</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>07/11/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/BRASIL.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP do Brasil – Interlagos</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>21/11/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/AUSTRALIA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Austrália – Melbourne</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>05/12/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/ARABIASAUDITA.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP da Arábia Saudita – Jeddah</td>
-                             <td>Não realizado</td>
-                         </tr>
-                         <tr>
-                             <td>12/12/2021</td>
-                             <td class="textLeft"><img src ="{% static 'website/images/ABUDHABI.png' %}" style="vertical-align: middle; height: 15px; border: 1px solid black;"> GP de Abu Dhabi – Yas Marina</td>
-                             <td>Não realizado</td>
-                         </tr>
-                     </tbody>
-                </table>
-</div>
-
-{% endblock %}
+    <div style="display: flex; align-items: baseline; justify-content: space-evenly; flex-wrap: wrap;">
+        <table style="text-align: center;" cellpadding="10%" cellspacing="4" class="centerTable">
+            <caption>Layout PC</caption>
+            <tbody>
+            <tr>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+            </tr>
+            <tr>
+                <td>Menu</td>
+                <td>Menu</td>
+                <td>Menu</td>
+            </tr>
+            <tr>
+                <td>Main</td>
+                <td>Main</td>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Aside</td>
+                <td>Aside</td>
+                <td>Aside</td>
+            </tr>
+            <tr>
+                <td>Footer</td>
+                <td>Footer</td>
+                <td>Footer</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="10%" cellspacing="4"class="centerTable" >
+            <caption>Layout Telemovel</caption>
+            <tbody>
+            <tr>
+                <td>Header</td>
+            </tr>
+            <tr>
+                <td>Menu</td>
+            </tr>
+            <tr>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Aside</td>
+            </tr>
+            <tr>
+                <td>Footer</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="10%" cellspacing="4"class="centerTable" >
+            <caption>Tabela Inventário</caption>
+            <tbody>
+            <tr>
+                <td>Páginas</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Imagens</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Links Externos</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Vídeos</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Animações</td>
+                <td>2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Caracteristicas</th>
+            <th>Elementos</th>
+            <th>Exemplos</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Responsividade</td>
+            <td>Layout consoante o tamanho da janela do browser</td>
+            <td>Em todas as páginas</td>
+        </tr>
+        <tr>
+            <td>Layouts</td>
+            <td>CSS grid e CSS flexbox</td>
+            <td>Todas as páginas</td>
+        </tr>
+        <tr>
+            <td>Tipos de display</td>
+            <td>Flex, Grid, Block, None</td>
+            <td>O flex é usado em todas as páginas para ordenar os conteudos<br>
+                o grid é usado para fazer templates <br>
+                O block é usado para centrar as imagens<br>
+                O none é usado para fazer desaparecer as fotos sticky e fixed no telemovel.
+            </td>
+        </tr>
+        <tr>
+            <td>Seletores</td>
+            <td>Universal, tipo, classe, id, atributos, pseudo-classe, pseudo-elemento</td>
+            <td>Páginas de estilo CSS</td>
+        </tr>
+        <tr>
+            <td>Animações</td>
+            <td>Keyframes</td>
+            <td>Mudança de cor no topo da página e deslocação de um quadrado ao longo do topo da página que muda de cor</td>
+        </tr>
+        <tr>
+            <td>Etiquetas</td>
+            <td>Header, main, figure, figcaption, table, image,  section, aside, span, form, span, iframe, style, meta, link, title, diva, a, p, h, footer, svg</td>
+            <td>Todas as paginas</td>
+        </tr>
+        <tr>
+            <td>Propriedades CSS</td>
+            <td>Background color, color, min-width, max-width, align-items, top, right, left, bottom, margin-top, margin-left, margin-right, display, float, padding, margin, position, width, height, vertical-align, animation,</td>
+            <td>Utilizado nas páginas de estilo CSS</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Técnicas Usadas</th>
+            <th>Detalhes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>HTML é a base deste projeto.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>CSS é a estilização das páginas web.</td>
+        </tr>
+        <tr>
+            <td>Django</td>
+            <td>Django é a web framework do projeto.</td>
+        </tr>
+        <tr>
+            <td>Java Scrip</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table  cellpadding="10%" cellspacing="4" class="centerTable">
+        <thead>
+        <tr>
+            <th>Tecnologias Usadas</th>
+            <th>Detalhes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>HTML é a base deste projeto.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>CSS é a estilização das páginas web.</td>
+        </tr>
+        <tr>
+            <td>GitHub</td>
+            <td>Github foi o local de repositório do projeto, ajudando assim no trabalho de equipa.</td>
+        </tr>
+        <tr>
+            <td>Heroku</td>
+            <td>Heroku é a plataforma que ajuda na execução do website.</td>
+        </tr>
+        <tr>
+            <td>Django</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        <tr>
+            <td>Java Scrip</td>
+            <td>JavaScrip foi usado para o programa mandar alerts após ações.</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <figure>
+        <img src="{%static 'website/images/unknow.png' %}" class="centerImg">
+        <figcaption>Mapa do Website</figcaption>
+    </figure>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yabc-ItdihE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="centerImg"></iframe>
+    </main>
+{% endblock main %}
