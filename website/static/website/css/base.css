@@ -252,3 +252,123 @@ html {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.background{
+    background-color: #c5c3b6;
+}
+
+.simbolo{
+    width: auto;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.iconMeio{
+    vertical-align: middle;
+}
+
+.tabela2Epoca{
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.tabela2EpocaPic{
+    vertical-align:middle;
+    height: 25px;
+    background-position: center;
+}
+
+.classPilotos{
+    vertical-align: middle;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.arrowCima{
+    font-size:50px;
+    height:30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.flagTeam{
+    vertical-align:middle;
+    height: 25px;
+    background-position: center;
+}
+
+.borderMercedes{
+    border: 5px solid #00D2BE
+}
+
+.borderRedBull{
+    border: 5px solid #0600EF
+}
+
+.borderMclaren{
+    border: 5px solid #FF9800
+}
+
+.borderFerrari{
+    border: 5px solid #DC0000
+}
+
+.borderHonda{
+    border: 5px solid#2B4562
+}
+
+.borderAM{
+    border: 5px solid #006F62
+}
+
+.borderAR{
+    border: 5px solid #900000
+}
+
+.borderAlphine{
+    border: 5px solid #0090FF
+}
+
+.borderWR{
+    border: 5px solid #005AFF
+}
+
+.borderHaas{
+    border: 5px solid #FFFFFF
+}
+
+.flagEquipas{
+    vertical-align: middle;
+    height: 20px;
+}
+
+.equipasDiv{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.homeDetails{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.figureRec{
+    display: flex;
+    align-items: center;
+}
+
+.tabelaRec{
+    vertical-align: middle;
+    height: 15px;
+    border: 1px solid black;
+}

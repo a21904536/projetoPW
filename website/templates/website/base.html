@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
-    <body style="background-color:#c5c3b6"></body>
+    <body class="background"></body>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
@@ -19,17 +19,17 @@
  <header class="jumbotron text-center">
         <figure>
             <img src="{% static 'website/images/simboloF1.png' %}" alt="simboloF1" style="width:auto;" class="centerImg">
-            <details style="text-align: center;">Simbolo oficial da Formula 1</details>
+            <details class="textCenter">Simbolo oficial da Formula 1</details>
         </figure>
         <nav>
-            <a class="btn btn-info" href="{% url 'website:home' %}"><span class="material-icons md-24" style="vertical-align:middle">home</span> Home</a>
-            <a class="btn btn-info" href="{% url 'website:epoca' %}"><span class="material-icons md-24" style="vertical-align:middle">public</span> Época 2021</a>
+            <a class="btn btn-info" href="{% url 'website:home' %}"><span class="material-icons md-24 iconMeio">home</span> Home</a>
+            <a class="btn btn-info" href="{% url 'website:epoca' %}"><span class="material-icons md-24 iconMeio">public</span> Época 2021</a>
             <a class="btn btn-info" href="{% url 'website:equipas' %}">Equipas</a>
-            <a class="btn btn-info" href="{% url 'website:recordes' %}"><span class="material-icons md-24" style="vertical-align:middle">emoji_events</span> Recordes</a>
+            <a class="btn btn-info" href="{% url 'website:recordes' %}"><span class="material-icons md-24 iconMeio">emoji_events</span> Recordes</a>
             <a class="btn btn-info" href="{% url 'website:quizz' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Quizz</a>
-            <a class="btn btn-info" href="{% url 'website:opiniao' %}"><span class="material-icons md-24" style="vertical-align:middle">thumb_up_alt</span> Opinião</a>
+            <a class="btn btn-info" href="{% url 'website:opiniao' %}"><span class="material-icons md-24 iconMeio">thumb_up_alt</span> Opinião</a>
             <a class="btn btn-info" href="{% url 'website:contacto' %}"><!--<span class="material-icons md-24" style="vertical-align:middle">info</span>--> Contacto</a>
-            <a class="btn btn-info" href="{% url 'website:about' %}"><span class="material-icons md-24" style="vertical-align:middle">info</span> About Website</a>
+            <a class="btn btn-info" href="{% url 'website:about' %}"><span class="material-icons md-24 iconMeio">info</span> About Website</a>
         </nav>
  </header>
 
