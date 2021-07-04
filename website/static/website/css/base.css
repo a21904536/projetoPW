@@ -28,65 +28,6 @@ th{
     color: white;
 }
 
-@media (min-width: 601px) {
-    body {
-        background-color: white;
-        display: grid;
-        grid-template-columns: 25% 50% 25%;
-        grid-template-areas:
-        'header header header'
-        'menu   menu   menu'
-        'main   main  main'
-        'aside aside aside'
-        'footer footer footer';
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav > a {
-        display: flex;
-    }
-}
-
-@media (max-width: 600px) {
-    .fixed {
-        display: none;
-    }
-    .sticky {
-        display: none;
-    }
-    .relative {
-        display: none;
-    }
-
-    body {
-        background-color: white;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'header'
-        'menu'
-        'main'
-        'aside'
-        'footer';
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav > div {
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 footer {
     margin-bottom: -50px;
@@ -371,4 +312,11 @@ html {
     vertical-align: middle;
     height: 15px;
     border: 1px solid black;
+}
+
+.tabelasPequenasAbout {
+    display: flex;
+    align-items:baseline;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
