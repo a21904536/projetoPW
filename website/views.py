@@ -17,9 +17,6 @@ def recordes(request):
 def equipas(request):
     return render(request, 'website/equipas.html')
 
-def opiniao(request):
-    return render(request, 'website/opiniao.html')
-
 def about(request):
     return render(request, 'website/about.html')
 
