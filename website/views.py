@@ -25,7 +25,7 @@ def contacto_page_view(request):
 
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('website:home'))
 
     context = {'form': form}
 
@@ -35,7 +35,7 @@ def quizz_page_view(request):
     form = QuizzForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('website/quizz.html'))
+        return HttpResponseRedirect(reverse('website:quizz'))
 
     context = {
         'form': form,
